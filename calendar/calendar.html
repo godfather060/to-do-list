@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar</title>
+    <link rel="website icon" type="png" href="/images/icon.png">
+    <link rel="stylesheet" href="calendar.css">
+    <link rel="stylesheet" href="evo-calendar.min.css">
+   
+<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="hero">
+      <nav>
+        <h2 class="logo">To-Do <span>List</span></h2>
+        <ul>
+      <li><a href= "/main/index.html">Home</a></li>
+      <li><a href= "/creators/creators.html">Creators</a></li>
+      <li><a href= "/contact us/contact.html">Contact Us</a></li>
+        </ul>
+        <a href="/register/login.html"><button type="button" id="logoutButton"><b>Log out</b></button></a>
+      </nav>
+
+    <div class="sidebar">
+      <div class="sidebar-link">
+      <a href= "/main/index.html"><img src="/images/home.svg"></a>
+        <div>Home</div>
+    </div>
+    <div class="sidebar-link">
+        <a href= "/calendar/calendar.html"><img src="/images/calendar.svg"></a>
+        <div>Calendar</div>
+      </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div id="calendar"></div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+    <script src="evo-calendar.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+    $('#calendar').evoCalendar({
+        theme: "Midnight Blue",
+        calendarEvents: [
+      {
+        id: 'event1', // Event's ID (required)
+        name: "New Year", // Event name (required)
+        date: "January/1/2024", // Event date (required)
+        description: "The heart touching greetings will make feel anyone very special. Wish your near and dear one with special greetings. ",
+        type: "holiday", // Event type (required)
+        everyYear: true // Same event every year (optional)
+      },
+      {
+        id: 'event2', // Event's ID (required)
+        name: "Republic Day", // Event name (required)
+        date: "January/26/2024", // Event date (required)
+        description: "Republic Day, observed on January 26th, marks the adoption of India's Constitution in 1950. It is celebrated with grand parades in New Delhi, featuring cultural displays, military parades, and patriotic events across the country, symbolizing national pride and the nation's democratic spirit. ",
+        type: "holiday", // Event type (required)
+        everyYear: true // Same event every year (optional)
+      },
+      {
+        id: 'event3', // Event's ID (required)
+        name: "Shivaji Jayanti", // Event name (required)
+        date: "February/19/2024", // Event date (required)
+        description: "Shivaji Jayanti, celebrated on February 19th, marks the birth anniversary of Chhatrapati Shivaji Maharaj, the founder of the Maratha Empire. It is observed with great enthusiasm in Maharashtra and other parts of India, featuring processions, cultural programs, and tributes to his leadership, valor, and contributions to Indian history.",
+        type: "holiday", // Event type (required)
+        everyYear: true // Same event every year (optional)
+      },
+      
+      {
+        id: 'event 4', // Event's ID (required)
+        name: "Woman's Day", // Event name (required)
+        date: "March/8/2024", // Event date (required)
+        description: "An equal world is an enabled world. How will you help forge a gender equal world? Celebrate women 's achievement. Raise awareness against bias. Take action for equality.",
+        type: "holiday", // Event type (required)
+        everyYear: true // Same event every year (optional)
+      },
+      {
+        id: 'event 5', // Event's ID (required)
+        name: "Maharashtra Day", // Event name (required)
+        date: "May/1/2024", // Event date (required)
+        description: "Maharashtra Day, observed on May 1st, commemorates the formation of the state of Maharashtra in 1960. It celebrates the cultural heritage, achievements, and progress of Maharashtra, with flag hoisting ceremonies, parades, cultural events, and exhibitions showcasing the state's rich diversity and contributions to India.",
+        type: "holiday", // Event type (required)
+        everyYear: true // Same event every year (optional)
+      },
+      {
+        id: 'event 6', // Event's ID (required)
+        name: "Maha Shivaratri", // Event name (required)
+        date: "March/8/2024", // Event date (required)
+        description: "Maha Shivaratri, observed on the 14th day of the dark fortnight of the month of Phalguna (February or March), is a Hindu festival dedicated to Lord Shiva. Devotees fast, chant prayers, and visit temples, especially the twelve Jyotirlinga shrines, to seek blessings, purification, and spiritual upliftment.",
+        type: "holiday", // Event type (required)
+        everyYear: true // Same event every year (optional)
+      },
+      {
+        id: 'event 7', // Event's ID (required)
+        name: "Holi", // Event name (required)
+        date: "March/25/2024", // Event date (required)
+        description: "Holi, celebrated on the full moon day in the month of Phalguna (usually March), is a vibrant Hindu festival known as the Festival of Colors. It marks the arrival of spring and the triumph of good over evil. People joyously throw colored powders and water at each other, enjoy festive foods, and dance to traditional music, fostering unity and community spirit.",
+        type: "holiday", // Event type (required)
+        everyYear: true // Same event every year (optional)
+      },
+      {
+        id: 'event 8', // Event's ID (required)
+        name: "Diwali", // Event name (required)
+        date: "November /1/2024", // Event date (required)
+        description: "Diwali, also known as Deepavali, is the Hindu festival of lights celebrated across India and various parts of the world. It typically falls between October and November, marking the victory of light over darkness and good over evil. During Diwali, homes and public places are illuminated with lamps and candles, symbolizing the inner light that protects from spiritual darkness. Families exchange sweets, burst fireworks, and perform prayers to deities, making it a joyous occasion filled with happiness, prosperity, and the renewal of familial bonds.",
+        type: "holiday", // Event type (required)
+        everyYear: true // Same event every year (optional)
+      },
+      {
+        id: 'event 9', // Event's ID (required)
+        name: "Independence Day", // Event name (required)
+        date: "August/15/2024", // Event date (required)
+        description: "Independence Day of India, celebrated on August 15th, commemorates the nation's independence from British rule in 1947. It is a national holiday marked with flag hoisting ceremonies, parades, and cultural programs across the country. The Prime Minister delivers a speech from the Red Fort in Delhi, highlighting the achievements of the nation and its future aspirations. Indians rejoice in their freedom with patriotic fervor, showcasing unity and solidarity as they honor the sacrifices made by freedom fighters for the country's independence.",
+        type: "holiday", // Event type (required)
+        everyYear: true // Same event every year (optional)
+      },
+      {
+        id: 'event 10', // Event's ID (required)
+        name: "Ganesh Chaturthi", // Event name (required)
+        date: "September/7/2024", // Event date (required)
+        description: "Ganesh Chaturthi: Ganesh Chaturthi celebrates the birth of Lord Ganesha, the remover of obstacles, with fervent prayers, colorful decorations, and the immersion of clay idols in water at the festival's end.",
+        type: "holiday", // Event type (required)
+        everyYear: true // Same event every year (optional)
+      },
+      {
+        id: 'event 11', // Event's ID (required)
+        name: "Gandhi Jayanti", // Event name (required)
+        date: "October/2/2024", // Event date (required)
+        description: "Gandhi Jayanti, observed on October 2nd, marks the birth anniversary of Mahatma Gandhi, the father of the nation in India. It is celebrated with reverence, honoring Gandhi's principles of truth, non-violence, and social justice through prayer meetings, communal services, and initiatives promoting peace and harmony.",
+        type: "holiday", // Event type (required)
+        everyYear: true // Same event every year (optional)
+      },
+      {
+        id: 'event 12', // Event's ID (required)
+        name: "Ram Navami", // Event name (required)
+        date: "April/17/2024", // Event date (required)
+        description: "Ram Navami, celebrated in honor of Lord Rama's birth, falls on the ninth day of Chaitra month (March or April) in the Hindu calendar. Devotees observe the occasion with prayers, bhajans (devotional songs), and readings from the Ramayana. Temples are decorated, and processions recounting the life and teachings of Lord Rama are held in many regions.",
+        type: "holiday", // Event type (required)
+        everyYear: true // Same event every year (optional)
+      },
+      {
+        id: 'event 13', // Event's ID (required)
+        name: "New Year's Eve", // Event name (required)
+        date: "December/31/2024", // Event date (required)
+        description: "New Year's Eve, celebrated on December 31st, marks the transition from the old year to the new. It is often marked with festive gatherings, parties, fireworks, and countdowns to midnight. People reflect on the past year's achievements and make resolutions for the upcoming year, creating a lively atmosphere of hope and anticipation worldwide.",
+        type: "holiday", // Event type (required)
+        everyYear: true // Same event every year (optional)
+      },
+      {
+        name: "Vacation Leave",
+        badge: "02/13 - 02/15", // Event badge (optional)
+        date: ["February/13/2024", "February/15/2024"], // Date range
+        description: "Vacation leave for 3 days.", // Event description (optional)
+        type: "event",
+        color: "#63d867" // Event custom color (optional)
+      }
+    ]
+
+
+    })
+})
+    </script>
+</body>
+</html>

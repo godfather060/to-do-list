@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="website icon" type="png" href="/images/icon.png">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="hero">
+        <nav>
+        <h2 class="logo">To-Do <span>List</span></h2>
+        <ul>
+            <li><a href= "/main/index.html">Home</a></li>
+            <li><a href= "/creators/creators.html">Creators</a></li>
+            <li><a href= "/contact us/contact.html">Contact Us</a></li>
+        </ul>
+        <a href="/register/login.html"><button type="button" id="logoutButton"><b>Log out</b></button></a>
+    </nav>
+
+    <div class="sidebar">
+        <div class="sidebar-link">
+            <a href= "/main/index.html"> <img src="/images/home.svg"></a>
+            <div>Home</div>
+        </div>
+        <div class="sidebar-link">
+            <a href= "/calendar/calendar.html"><img src="/images/calendar.svg"></a>
+            <div>Calendar</div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="contact-container">
+        <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+            <div class="contact-left-title">
+                <h2>Get in Touch</h2>
+                <hr>
+            </div>
+            <input type="hidden" name="access_key" value="f9cad7ac-a1f8-4503-99c5-8deee045e077">
+            <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
+            <input type="email" name="email" placeholder="Your Email" class="contact-inputs" required>
+            <textarea name="message" placeholder="Your Message" class="contact-inputs" required></textarea>
+            <button type="submit">Submit <img src="assets/arrow_icon.png"></button>
+
+        </form>
+        <div class="contact-right">
+            <img src="assets/right_img.png" alt="">
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List App</title>
+    <link rel="website icon" type="png" href="/images/icon.png">
+    <link rel="stylesheet" href="/main/nav.css">
+    <link rel="stylesheet" href="/main/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="hero">
+        <nav>
+            <h2 class="logo">To-Do <span>List</span></h2>
+            <ul class="nav-ul">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="/creators/creators.html">Creators</a></li>
+        <li><a href="/contact us/contact.html">Contact Us</a></li>
+            </ul>
+            <a href="/register/login.html"><button type="button" id="logoutButton"><b>Log out</b></button></a>
+        </nav>
+        
+        <div class="container">
+            <div class="todo-app">
+            <h2>To-Do <span class="papa">List</span><img src="/images/icon.png" alt=""></h2>
+            <div class="row">
+                <input type="text" id="input-box" placeholder="Add your text">
+                <button onclick="addTask()">Add</button>
+            </div>
+            <ul class="content-ul" id="list-container">
+                <!--<li class="checked">Task 1</li>
+                <li>Task 2</li>
+                <li>Task 3</li> -->
+            </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="sidebar">
+        <div class="sidebar-link">
+        <a href="index.html"><img src="/images/home.svg"></a>
+        <div>Home</div>
+        </div>
+        <div class="sidebar-link">
+            <a href="/calendar/calendar.html"><img src="/images/calendar.svg"></a>
+            <div>Calendar</div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
